@@ -2,6 +2,19 @@
 #include <stdio.h>
 #include <string.h>
 
+void BinNumCheck(char *num)
+{
+    int lenOfNum = strlen(num);
+    for (int i = 0; i < lenOfNum; i++)
+    {
+        if (num[i] != 1 || num [i] != 0)
+        {
+            return NULL;
+        }
+    }
+    return;
+}
+
 int BinToDec(char *num)
 {
     int decNum = 0;
