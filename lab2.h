@@ -1,6 +1,9 @@
 #ifndef LAB2_H
 #define LAB2_H
 
+//Проверяет что введено двоичное число.
+void BinNumCheck(char *num);
+
 //Переводит двоисное число в десятичное.
 int BinToDec(char *num);
 
@@ -14,9 +17,9 @@ int plus(char *num1, char *num2);
 int multiplication(char *num1, char *num2);
 
 //XOR (^)
-int XOR(char *num1, char *num2);
+char XOR(char *num1, char *num2);
 
 //Побитовая инверсия (~)
-int inversion(char *num);
+char inversion(char *num);
 
 #endif
